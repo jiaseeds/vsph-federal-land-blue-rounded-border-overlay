@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glassmorphism Boxes</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      min-width: 100vw;
+      height: 100vh;
+      width: 100vw;
+      background: transparent;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-family: Arial, sans-serif;
+    }
+
+    .glass-container {
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .glass-box {
+      background: rgba(19, 32, 75, 0.200); /* Use white for glass effect */
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 1px solid rgba(217, 217, 217, 0.4); /* Subtle white border */
+      width: 100vw;
+      height: 100vh;
+      transition: border-radius 0.2s;
+      border-radius: 60px; /* Rounded edges */
+}
+    }
+  </style>
+</head>
+<body>
+  <div class="glass-container">
+    <div class="glass-box"></div>
+  </div>
+</body>
+</html>
